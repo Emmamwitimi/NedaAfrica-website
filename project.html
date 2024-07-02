@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - NEDA</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optional: Include custom CSS -->
+    <style>
+        /* Add any custom styles here */
+        .bg-neda-blue {
+            background-color: #0D3336;
+        }
+
+        .text-neda-green {
+            color: #0697A7;
+        }
+
+        .text-neda-gray {
+            color: #C7D1D8;
+        }
+
+        .border-neda-gray {
+            border-color: #C7D1D8;
+        }
+
+        .hover\:text-neda-green:hover {
+            color: #057D8A;
+        }
+
+        .btn-neda-orange {
+            background-color: #f97316;
+        }
+
+        .btn-neda-orange:hover {
+            background-color: #e6610c;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <header class="bg-neda-blue text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <img class="h-12" src="images/NEDA.png" alt="NEDA Logo">
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="hover:text-neda-green">Home</a></li>
+                    <li><a href="about.html" class="hover:text-neda-green">About Us</a></li>
+                    <li><a href="project.html" class="hover:text-neda-green">Programs</a></li>
+                    <li><a href="partners.html" class="hover:text-neda-green">Partners</a></li>
+                    <li><a href="gallery.html" class="hover:text-neda-green">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="images/projects-hero.jpg" alt="Projects" class="w-full h-96 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h1 class="text-5xl text-white font-bold">Our Programs</h1>
+        </div>
+    </section>
+
+    <!-- E-Maktaba Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">E-MAKTABA</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="images/emaktaba.jpg" alt="E-Maktaba" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <p class="text-lg text-gray-700 mb-4">
+                        E-MAKTABA provides mentorship and safe spaces for nurturing talents, especially in rural, slum, and marginalized areas. We set up container libraries to achieve this. Our approach involves giving individuals ample time for thinking, reflection, and collaboration. We encourage unplanned physical and intellectual activities, along with mentorship to help individuals explore their interests and capabilities effectively.
+                    </p>
+                    <a href="#" class="btn-neda-orange text-white font-bold px-6 py-3 rounded-lg inline-block hover:bg-orange-600">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Projects Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">Future Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ufanisi Card -->
+                <div class="card bg-white rounded-lg shadow-lg p-6 hover:bg-gray-50">
+                    <img src="images/ufanisi.jpg" alt="Ufanisi" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-4">UFANISI</h3>
+                    <p class="text-gray-700 mb-4">
+                        Ufanisi is a project that is aimed to be founded on the principle of providing an empowerment platform to women aged 12-40 years in marginalized areas.
+                        Women residing in marginalized areas of Africa bear the greatest brunt of social exclusion. Ufanisi seeks to offer technical courses that would ensure ladies can economically sustain themselves while also ensuring holistic development by nurturing core values.
+                    </p>
+                    <a href="#" class="btn-neda-orange text-white font-bold px-4 py-2 rounded-lg inline-block hover:bg-orange-600">Learn More</a>
+                </div>
+                <!-- Shupavu Card -->
+                <div class="card bg-white rounded-lg shadow-lg p-6 hover:bg-gray-50">
+                    <img src="images/shupavu.jpg" alt="Shupavu" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-4">SHUPAVU</h3>
+                    <p class="text-gray-700 mb-4">
+                        Shupavu is a project that focuses on vocational and behavioral training among men led by a team of dedicated mentors who strive to bring the best out of boys and male adults.
+                        The project seeks to bridge the gap left by the loss of identity in men in the current society by encouraging them to shoulder responsibilities while upholding key virtues such as integrity, honesty, kindness, and hard work.
+                    </p>
+                    <a href="#" class="btn-neda-orange text-white font-bold px-4 py-2 rounded-lg inline-block hover:bg-orange-600">Learn More</a>
+                </div>
+                <!-- Nawiri Card -->
+                <div class="card bg-white rounded-lg shadow-lg p-6 hover:bg-gray-50">
+                    <img src="images/nawiri.jpg" alt="Nawiri" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-4">NAWIRI</h3>
+                    <p class="text-gray-700 mb-4">
+                        In Nawiri we seek to give individuals the time and space they need for thinking, reflection, contemplation, and productive collaboration. In this project, we aim to partner with the Catholic church to offer retreat spaces where one can take time off and be able to release the pressure of daily routine.
+                        One can either choose to have a guided retreat or an individual retreat according to one’s current preference.
+                    </p>
+                    <a href="#" class="btn-neda-orange text-white font-bold px-4 py-2 rounded-lg inline-block hover:bg-orange-600">Learn More</a>
+                </div>
+                <!-- Anthera Card -->
+                <div class="card bg-white rounded-lg shadow-lg p-6 hover:bg-gray-50">
+                    <img src="images/anthera.jpg" alt="Anthera" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-4">ANTHERA</h3>
+                    <p class="text-gray-700 mb-4">
+                        Anthera is a project that focuses on coming up with sustainable environmental and water practices while still ensuring a win-win situation is achieved with all the stakeholders.
+                        Access to clean water is a basic human right, but unfortunately, it is not always available to everyone especially those in marginalized areas. In many parts of the world, people struggle to access clean water for their daily needs, and this issue is only expected to worsen due to climate change and increasing population. Anthera therefore is a project that aims to address this problem among others by implementing sustainable water solutions that can provide clean water to those in dire need of it.
+                    </p>
+                    <a href="#" class="btn-neda-orange text-white font-bold px-4 py-2 rounded-lg inline-block hover:bg-orange-600">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <div class="mt-12">
+        <h3 class="text-2xl font-bold mb-4 text-center text-neda-green">Reach Us</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <p class="mb-4 text-lg">
+                    It's always a pleasure to have you talk to us.
+                </p>
+                <ul class="list-disc ml-4">
+                    <li class="flex items-center mb-2">
+                        <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <span>Nairobi, Kenya</span>
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <span>+254111783300</span>
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <span>info@nedaafrica.org</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Name"
+                        class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full">
+                    <input type="email" placeholder="Email Address"
+                        class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full">
+                    <textarea placeholder="Message"
+                        class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full h-32"></textarea>
+                    <button type="submit"
+                        class="btn-neda-orange rounded-lg px-4 py-2 text-white font-bold">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-neda-blue py-4 text-white">
+<div class="container mx-auto text-center">
+    <p>&copy; 2024 NEDA Africa. All rights reserved.</p>
+    <p>Terms and conditions</p>
+</div>
+</footer>
+
+</body>
+
+</html>
