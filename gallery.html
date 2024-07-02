@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - NEDA Africa</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optional: Include custom CSS -->
+    <style>
+        /* Add any custom styles here */
+        .bg-neda-blue {
+            background-color: #0D3336;
+        }
+
+        .text-neda-green {
+            color: #0697A7;
+        }
+
+        .text-neda-gray {
+            color: #C7D1D8;
+        }
+
+        .border-neda-gray {
+            border-color: #C7D1D8;
+        }
+
+        .hover:text-neda-green:hover {
+            color: #057D8A;
+        }
+
+        .btn-neda-orange {
+            background-color: #f97316;
+        }
+
+        .btn-neda-orange:hover {
+            background-color: #e6610c;
+        }
+
+        .btn-neda-blue {
+            background-color: #0D3336;
+        }
+
+        .btn-neda-blue:hover {
+            background-color: #0A2729;
+        }
+
+        .gallery-item {
+            position: relative;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <header class="bg-neda-blue text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <img class="h-12" src="images/NEDA.png" alt="NEDA Logo">
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="chat.html" class="hover:text-neda-green">Home</a></li>
+                    <li><a href="chatab.html" class="hover:text-neda-green">About Us</a></li>
+                    <li><a href="projects.html" class="hover:text-neda-green">Projects</a></li>
+                    <li><a href="partners.html" class="hover:text-neda-green">Partners</a></li>
+                    <li><a href="gallery.html" class="hover:text-neda-green">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+
+            <!-- Gallery Heading -->
+            <h2 class="text-4xl font-bold mb-8 text-center text-neda-green">Gallery</h2>
+
+            <!-- Mentorship and Donations Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Mentorship -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden border border-neda-gray hover:shadow-2xl transition-shadow duration-300">
+                    <img class="w-full h-48 object-cover" src="images/mentorship.jpg" alt="Mentorship">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Mentorship</h3>
+                        <p class="text-lg mb-4 text-neda-gray">
+                            Our mentorship programs provide guidance and support to individuals in marginalized communities, helping them to grow and achieve their potential.
+                        </p>
+                    </div>
+                </div>
+                <!-- Donations -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden border border-neda-gray hover:shadow-2xl transition-shadow duration-300">
+                    <img class="w-full h-48 object-cover" src="images/donations.jpg" alt="Donations">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Donations</h3>
+                        <p class="text-lg mb-4 text-neda-gray">
+                            Contributions from generous donors help us to fund our various programs and initiatives, making a significant impact in the communities we serve.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-center text-neda-green">Watch Our Work</h3>
+                <div class="flex justify-center">
+                    <iframe class="w-full md:w-3/4 lg:w-1/2 h-64" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Slideshow -->
+            <div class="relative mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-center text-neda-green">Photo Gallery</h3>
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <img class="w-full h-80 object-cover" src="images/photo1.jpg" alt="Gallery Photo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-full h-80 object-cover" src="images/photo2.jpg" alt="Gallery Photo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-full h-80 object-cover" src="images/photo3.jpg" alt="Gallery Photo 3">
+                    </div>
+                    <!-- Add more gallery items here -->
+                    <!-- Navigation Buttons -->
+                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-neda-blue text-white p-2 rounded-full hover:bg-neda-blue hover:text-neda-green focus:outline-none" id="prevSlide">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-neda-blue text-white p-2 rounded-full hover:bg-neda-blue hover:text-neda-green focus:outline-none" id="nextSlide">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-center text-neda-green">Reach Us</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="mb-4 text-lg">
+                            It's always a pleasure to have you talk to us.
+                        </p>
+                        <ul class="list-disc ml-4">
+                            <li class="flex items-center mb-2">
+                                <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                                <span>Nairobi, Kenya</span>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                                <span>+254111783300</span>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <svg class="h-5 w-5 mr-2 text-neda-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                                <span>info@nedaafrica.org</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form action="#" method="POST">
+                            <input type="text" placeholder="Name"
+                                class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full">
+                            <input type="email" placeholder="Email Address"
+                                class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full">
+                            <textarea placeholder="Message"
+                                class="bg-neda-gray-300 rounded-lg px-4 py-2 mb-2 w-full h-32"></textarea>
+                            <button type="submit"
+                                class="btn-neda-orange rounded-lg px-4 py-2 text-white font-bold">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neda-blue py-4 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 NEDA Africa. All rights reserved.</p>
+            <p><a href="#" class="hover:text-neda-green">Terms and Conditions</a></p>
+        </div>
+    </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        document.getElementById('nextSlide').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('prevSlide').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Initialize the first slide
+        showSlide(currentSlide);
+    </script>
+
+</body>
+
+</html>

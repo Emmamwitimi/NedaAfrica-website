@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!--home page 1st section-->
+    <section>
+        <div class="bg-[#374151]/50 relative">
+            <!--navigation bar-->
+            <div class="flex bg-[#0D3336] justify-between items-center p-4">
+                <nav class="flex text-white">
+                    <img class="h-12" src="images/NEDA.png" alt="logo">
+                    <ul id="nav-links" class="hidden lg:flex place-items-center space-x-8 ml-10">
+                        <li class="hover:text-[#0697A7] active:text-green"><a href="chat.html">Home</a></li>
+                        <li class="hover:text-[#0697A7] active:text-green"><a href="chatab.html">About us</a></li>
+                        <li class="hover:text-[#0697A7] active:text-green"><a href="projects.html">Programs</a></li>
+                        <li class="hover:text-[#0697A7] active:text-green"><a href="partners.html">Partners</a></li>
+                        <li class="hover:text-[#0697A7] active:text-green"><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <button id="nav-toggle" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="text-white mt-48 absolute insert-0 z-10 place-items-center">
+                <h1 class="font-bold ml-96 text-[50px]">NEDA EXPERIENCE</h1>
+                <p class="ml-28 text-28"> As a stream flows forth into dry land giving life to everything it touches, we
+                    strive to give life to souls so that a positive effect can be felt not only by the individuals
+                    themselves, but may ripple out into the society as a whole.</p>
+            </div>
+            <div id="slider">
+                <img class="w-full mix-blend-overlay" src="images/children.jpg" alt="slide1">
+                <img class="w-full mix-blend-overlay hidden" src="images/mentor.jpg" alt="slide2">
+                <img class="w-full mix-blend-overlay hidden" src="images/social.jpg" alt="slide3">
+            </div>
+        </div>
+    </section>
+    <!--What we do layer-->
+    <section class="">
+        <div class=" bg-[#195155] flex-col flex pb-12 ">
+            <div>
+                <h1 class="text-white place-items-center ml-96 text-[50px] font-bold ">WHAT WE DO</h1>
+            </div>
+            <div class="flex gap-4 ">
+                <div class="flex-1 bg-gray-300 rounded-lg p-4">
+                    <div class="">
+                        <img class="w-full h-80 " src="images/mentor.jpg" alt="">
+                    </div>
+                    <p>We engage in the development of minds through personalised mentorship sessions. We connect
+                        students with experienced professionals who guide them with valuable insights to help them reach
+                        their goals. These sessions are designed to be collaborative where they gain knowledge, build
+                        confidence, and advance their skills.</p>
+                        <button
+                        class=" px-4 py-2 bg-[#0697A7] rounded place-items-center justify-center text-white font-bold">LEARN
+                        MORE</button>
+                </div>
+                <div class=" flex-1 bg-gray-300 rounded-lg p-4">
+                    <img class="rounded w-full h-80" src="images/boys.jpg" alt="">
+                    <p>We believe in building a stronger community, one person at a time. We aim to provide support and
+                        resources to individuals, families, and groups in marginalised areas facing challenges. Through
+                        empowerment, advocacy, and collaboration, we work to improve well-being and create lasting
+                        positive change.  </p>
+                    <div>
+                        <button
+                        class=" px-4 py-2 bg-[#0697A7] rounded place-items-center justify-center text-white font-bold">LEARN
+                        MORE</button>
+                    </div>
+                </div>
+                <div class="flex justify-center flex-col flex-1 bg-gray-300 rounded-lg p-4">
+                    <img class="w-full h-80" src="images/social.jpg" alt="">
+                    <p>Experience the impact firsthand! We welcome visitors to see our work in action and learn more
+                        about the cause we're passionate about. Your generous donations, big or small, directly fuel our
+                        mission. Schedule a visit today to connect with our community, and consider making a
+                        contribution in kind to help us continue making a difference.</p>
+                    <div class="flex justify-center ">
+                        <button
+                            class=" px-4 py-2 bg-[#0697A7] rounded place-items-center justify-center text-white font-bold">LEARN
+                            MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--subscribe layer-->
+    <section class="">
+        <div class=" bg-[#042f2e]  ">
+            <div class="text-center text-white py-8 ">
+                <h2 class="text-[40px] font-bold">JOIN THE NEDA EXPERIENCE</h2>
+            </div>
+            <div class="flex justify-center gap-4">
+                <div class="flex flex-col space-y-4">
+                    <input type="email" placeholder="Enter your email" class="rounded px-4 py-2" id="email1">
+                    <input type="text" placeholder="message" class="rounded px-4 py-2" id="message1">
+                    <button
+                        class="font-bold text-white py-2 px-4 bg-[#f97316] hover:bg-[#e6610c] text-white py-2 px-4 rounded" id="submit1">submit</button>
+                </div>
+                <div class="flex flex-col  space-y-4 ">
+                    <input type="email" placeholder="enter your email" class="rounded px-4 py-2" id="email2">
+                    <input type="text" placeholder="enter your phone number" class="rounded px-4 py-2" id="phone">
+                    <button
+                        class="font-bold bg-[#f97316] hover:bg-[#e6610c] text-white py-2 px-4 rounded" id="submit2">subscribe</button>
+                </div>
+            </div>
+            <div class="mt-8 justify-center flex ml-12 mb-">
+                <input id="checkbox" type="checkbox" class="h-5 w-5">
+                <label for="checkbox" class="text-white  ">I would like to be contacted with news and updates about your
+                    events and services</label>
+            </div>
+        </div>
+    </section>
+</body>
+<!--footer-->
+<footer class="bg-[#0D3336] py-4 text-white">
+    <div class="container flex justify-between mx-auto ">
+        <p>&copy; emmahowdy</p>
+        <p>All rights reserved.</p>
+        <p>Terms and conditions</p>
+    </div>
+</footer>
+
+</html>
